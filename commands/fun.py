@@ -162,8 +162,6 @@ class fun(commands.Cog):
         embed.set_image(url=submission.url)
         await ctx.send(embed=embed)
 
-
-
 """
     @commands.command(aliases=['Joke'])
     async def joke(self,ctx):
