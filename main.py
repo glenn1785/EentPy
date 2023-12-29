@@ -8,7 +8,7 @@ from config import *
 import asyncio
 import pymongo
 from keep_alive import keep_alive
-from defs.botLogboek import addEvent
+#from defs.botLogboek import addEvent
 
 # ToDo:
 #  alle dinges aanpasse naar AV
