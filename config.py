@@ -7,7 +7,8 @@ token = os.environ['token']
 
 tommorowiokey = os.environ['tommorowiokey']
 openAIKey = os.environ['openAIKey']
-cluster = os.environ['mongoDBCluster']
+
+cluster = MongoClient(os.environ['mongoDBCluster'])
 db = cluster["discord-data"]
 
 
@@ -21,9 +22,9 @@ greets = ["adios amigos", "yoo", "goodbye", "bye", "yo", "challas", "saluu", "ad
 othergreets = ["allow", "allo", "hallo", "bonjorno", "bonjor", "alloww", "allowww", "ellow", "bozoer", "ello", "bonsoir", "bjr", "bonjour"]
 
 clearlimit = 10
-botlogo ='https://i.postimg.cc/MGBY0KBH/logo.png'
+botlogo = 'https://i.postimg.cc/MGBY0KBH/logo.png'
 
-#foto's
+# foto's
 FotoPeirsman = 'https://i.postimg.cc/YqPgFPfZ/peirsman.png'
 FotoSarens = 'https://i.postimg.cc/FFD0rzf9/mnr-sarens.png'
 FotoDank = 'https://i.postimg.cc/4d1VhNBQ/dank.png'
