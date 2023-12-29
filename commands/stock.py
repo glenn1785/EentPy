@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 from config import *
 
 from math import floor
-from replit import db
+#from replit import db
 import json
 import yfinance as yf
 import plotly.graph_objs as go
