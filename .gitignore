@@ -6,3 +6,5 @@ pyproject.toml
 .cache
 .git
 .upm
+__pycache__
+.pythonlibs
