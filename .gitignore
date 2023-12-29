@@ -1,2 +1,8 @@
 venv
 .idea
+.replit
+poetry.lock
+pyproject.toml
+.cache
+.git
+.upm
