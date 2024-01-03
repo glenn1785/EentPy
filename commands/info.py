@@ -12,7 +12,7 @@ import asyncio
 
 class info(commands.Cog):
 
-    def __init__(self,client):
+    def __init__(self, client):
         self.client = client
 
     @commands.Cog.listener()
@@ -64,10 +64,8 @@ class info(commands.Cog):
         em.set_thumbnail(url=ctx.guild.icon)
         await ctx.send(embed=em)
 
-
-
-    @commands.command(aliases=['bot','Bot','Botinfo'])
-    async def botinfo(self,ctx):
+    @commands.command(aliases=['bot', 'Bot', 'Botinfo'])
+    async def botinfo(self, ctx):
         member = await self.client.fetch_user(config.bot_id)
         now = datetime.datetime.utcnow()
         elapsed = now - starttime
@@ -81,14 +79,13 @@ class info(commands.Cog):
         em.add_field(name='Gebruikers idee:', value=member.id)
         em.add_field(name='Status:', value='Online', inline=True)
         em.add_field(name='Hoe lang da k al werk zonder slaap :sleeping: :', value=f'{elapsed.days}d {hours}h {minutes}m {seconds}s')
-        em.add_field(name='Made in:',value='Replit')
-        #em.add_field(name='In dienst genomen:', value=member.joined_at.strftime("%a, %d %b %Y, %H:%M  %Z"))
+        em.add_field(name='Made in:', value='Replit')
+        # em.add_field(name='In dienst genomen:', value=member.joined_at.strftime("%a, %d %b %Y, %H:%M  %Z"))
         em.add_field(name='Bot gefabriceerd:', value=member.created_at.strftime("%a, %d %b %Y, %H:%M  %Z"))
-        em.add_field(name='Mijnen Website:', value='https://Eentpy.pepijnsimoens.repl.co')
+        em.add_field(name='Mijnen Website:', value='https://Eentpy.glenn1785.repl.co')
         em.set_thumbnail(url=config.botlogo)
         em.set_footer(text='Powered by Eent.py', icon_url=config.botlogo)
         await ctx.send(embed=em)
-
 
 
 starttime = datetime.datetime.utcnow()
