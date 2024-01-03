@@ -8,3 +8,4 @@ pyproject.toml
 .upm
 __pycache__
 .pythonlibs
+.local
