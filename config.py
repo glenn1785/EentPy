@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import os
 
-bot_version = '0.1'
+bot_version = '0.2'
 bot_id = '988143343559127090'
 token = os.environ['token']
 
