@@ -1,1 +1,9 @@
 discord.py==2.3.2
+pymongo==4.6.1
+flask==2.3.3
+praw==7.7.1
+numpy==1.26.2
+yfinance==0.2.33
+plotly==5.18.0
+geopy==2.4.1
+PyQRCode==1.2.1
