@@ -73,7 +73,7 @@ class onmessage(commands.Cog):
                     if counter > 5:
                         await message.channel.purge(limit=5)
                         await message.channel.send(f"ey {message.author.mention} stop me spammen")
-                        if message.author.bot == False:
+                        if not message.author.bot:
                             channel = await message.author.create_dm()
                             await channel.send(
                                 f"Ey {message.author.mention} stop is me spammen in {message.guild} AUB, danku")
